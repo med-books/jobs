@@ -12,6 +12,15 @@
 <meta property="og:title" content="jobs"> <meta property="og:url" content="https://med-books.github.io/jobs/"> <meta property="og:image" content="https://med-books.github.io/jobs/icon-128.png"> <meta property="og:description" content="Some useful links.">
 
 <style>
+#blink {
+font-size: 20px;
+font-weight: bold;
+color: #2d38be;
+                transition: 0.5s;
+}
+</style>
+        
+<style>
 /* unvisited link */
 a:link {
   color: #07519a;
@@ -91,8 +100,20 @@ a {
    
 <p>你是第<img width="20" height="20" src="http://stuff.mit.edu/cgi/counter/med-books.github.io/jobs" alt="several">个访问者，欢迎!😁😁</p>
 <p id="displayTime"></p>
-今晚会早早睡，爱你呦么么哒❤
 
+<p> 今晚会早早睡，爱你呦么么哒❤
+ </p>
+<p id="blink">
+亲爱的♡ⅴ♡，今晚去散步怎么样？去的话老地方见，带水带吃的～
+</p>
+
+<script type="text/javascript">
+var blink = document.getElementById('blink');
+            setInterval(function() {
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
+</script>
+        
 <div>
 
 <button class="button" id="resizeText1" onclick="resizeText(1)">字体➕️</button>
